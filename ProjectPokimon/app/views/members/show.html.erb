@@ -5,6 +5,5 @@
   <p><strong>Abilities:</strong> <%= @pokemon.abilities.map(&:name).join(", ") %></p>
   <p><strong>Forms:</strong> <%= @pokemon.forms.map(&:name).join(", ") %></p>
 
-
-  <%= link_to 'Back to Collection', root_path, class: 'back-button' %>
+ <%= link_to 'Back to Collection', root_path, class: 'back-button' %>
 </div>
