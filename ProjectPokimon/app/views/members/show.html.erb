@@ -1,0 +1,10 @@
+<div class="pokemon-details">
+  <h2><%= @pokemon.name %></h2>
+
+  <p><strong>Type:</strong> <%= @pokemon.types.map(&:name).join(", ") %></p>
+  <p><strong>Abilities:</strong> <%= @pokemon.abilities.map(&:name).join(", ") %></p>
+  <p><strong>Forms:</strong> <%= @pokemon.forms.map(&:name).join(", ") %></p>
+
+
+  <%= link_to 'Back to Collection', root_path, class: 'back-button' %>
+</div>

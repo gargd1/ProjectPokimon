@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProjectPokimon</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+  <nav class="menu">
+ <a> <%= link_to 'Home', root_path %></a>
+  <%= link_to 'About', static_pages_about_path %>
+  <!-- Add other links as needed -->
+</nav>
+
+    <%= yield %>
+  </body>
+</html>

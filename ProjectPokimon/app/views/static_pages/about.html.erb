@@ -1,0 +1,57 @@
+
+<div class="about-container">
+  <h1>About Pokémon Data Explorer</h1>
+
+  <div class="data-sources">
+    <h2>Data Sources</h2>
+    <p>
+      Our application utilizes data from authoritative sources to ensure a comprehensive and immersive experience:
+    </p>
+    <ul>
+      <li>
+        <strong>Official Pokémon API:</strong> The Pokémon API provides a vast amount of real data about each Pokémon, including their names, types, abilities, and forms. Here is a breakdown of the expected data and structure:
+      </li>
+    </ul>
+  </div>
+  <div>
+  <ul>
+        <li>
+            <strong>Pokémon Names</strong>: A list of each unique Pokémon name.
+        </li>
+        <li>
+            <strong>Types</strong>: Categories each Pokémon may belong to, affecting battle interactions.
+            <ul>
+                <li>Water</li>
+                <li>Fire</li>
+                <li>Grass</li>
+                <!-- More types can be added here -->
+            </ul>
+        </li>
+        <li>
+            <strong>Abilities</strong>: Special skills or passive effects for battle advantages.
+            <ul>
+                <li>Ability 1</li>
+                <li>Ability 2</li>
+                <!-- More abilities can be added here -->
+            </ul>
+        </li>
+        <li>
+            <strong>Forms</strong>: Different appearances some Pokémon may have, possibly affecting abilities or types.
+            <ul>
+                <li>Form 1</li>
+                <li>Form 2</li>
+                <!-- More forms can be added here -->
+            </ul>
+        </li>
+    </ul>
+
+  </div>
+
+  <div class="integration">
+    <h2>Integration of Datasets</h2>
+    <p>
+      We bridge data from these sources using relational database principles. Our tables—pokimon_names, types, abilities, forms, and categories—are associated via foreign keys, enabling complex queries like filtering Pokémon by type and category.
+    </p>
+    <%= image_tag("erd_image.png", alt: "Entity Relationship Diagram", class: "erd-image") %>
+  </div>
+</div>
